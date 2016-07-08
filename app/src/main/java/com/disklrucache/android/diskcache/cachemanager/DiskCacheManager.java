@@ -477,7 +477,7 @@ public class DiskCacheManager extends BaseCacheManager {
      * @param key
      * @param value
      */
-    public void put(String key, Serializable value) {
+    public void put(String key, LS value) {
         if (TextUtils.isEmpty(key) || value == null) return;
         DiskLruCache.Editor editor = null;
         ObjectOutputStream oos = null;
